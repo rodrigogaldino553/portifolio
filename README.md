@@ -27,6 +27,8 @@ It's my website to present me and show my services and skills 💜
 
 This is a project developed with the goal to learn more about web technologies.
 
+- link access: https://rodrigogaldino553.github.io/portifolio
+
 
 ## 🚀 Technology
 
