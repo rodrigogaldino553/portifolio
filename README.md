@@ -64,9 +64,9 @@ Project Link: [https://github.com/rodrigogaldino553/portifolio](https://github.c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[stars-shield]: https://img.shields.io/github/stars/rodrigogaldino553/pokedex.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/rodrigogaldino553/portifolio.svg?style=for-the-badge
 [stars-url]: https://github.com/rodrigogaldino553/stargazers
-[issues-shield]: https://img.shields.io/github/issues/rodrigogaldino553/pokedex.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/rodrigogaldino553/portifolio.svg?style=for-the-badge
 [issues-url]: https://github.com/rodrigogaldino553/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rodrigogaldino553
