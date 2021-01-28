@@ -107,22 +107,33 @@ header .head .contact:hover{
   header .right{
     left: 50%;
   }
+
+  #about-me #illustration{
+    width: 450px;
+    height: 400px;
+
+  }
 }
 
 @media(max-width:1000px){
   header{
-
     padding: 60px;
-  }
-
-  header .head img{
-    display: none;
   }
 
   header .right{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  header .head img{
+    display: none;
+  }
+
+  #about-me #illustration{
+    display: none;
+  }
+
+  
 }
 
 @media(max-width:800px){
