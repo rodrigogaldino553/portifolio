@@ -65,7 +65,7 @@ header .head .contact:hover{
   font-weight: bold;
 }
 
-#about-me img{
+#about-me #illustration{
   width: 650px;
   height: 600px;
 }
@@ -107,27 +107,38 @@ header .head .contact:hover{
   header .right{
     left: 50%;
   }
+
+  #about-me #illustration{
+    width: 450px;
+    height: 400px;
+
+  }
 }
 
 @media(max-width:1000px){
   header{
-
     padding: 60px;
-  }
-
-  header .head img{
-    display: none;
   }
 
   header .right{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  header .head img{
+    display: none;
+  }
+
+  #about-me #illustration{
+    display: none;
+  }
+
+  
 }
 
 @media(max-width:800px){
   header{
-    padding: 70px;
+    padding: 20px;
   }
 
   header .head img{
@@ -135,16 +146,29 @@ header .head .contact:hover{
   }
 
   header .right{
+    font-size: 12px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   #about-me {
-    padding: 20px 50px;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    font-size: 24px;
+    padding: 50px 50px;
+    font-size: 18px;
+  }
+
+  #about-me #illustration{
+    display: none;
+  }
+
+  @media(max-width:315px){
+    header{
+      padding: 5px;
+    }
+
+    #about-me {
+      padding: 40px 10px;
+      font-size: 12px;
+    }
   }
 }
 
