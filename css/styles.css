@@ -2,17 +2,25 @@
   font-family: 'Quicksand', sans-serif;;
 }
 
+body{
+
+}
+
 header{
   background: rgb(8, 49, 86);
   height: 600px;
-  padding: 20px;
+  padding: 20px 20px 20px 100px;
+}
+
+header .right{
+  position: relative; left: 80%;
+  transform: translateX(-50%);
 }
 
 header .head{
   font-weight: bold;
   position: relative;
   top: 25%;
-  left: 5%;
 }
 
 header .head img{
@@ -79,9 +87,67 @@ header .head .contact:hover{
 
 #works{
   background: rgb(8, 49, 86);
-  height: 600px;
-  padding: 20px;
+  padding: 100px 20px;
+  height: fit-content;
 }
+
+#works .custom-card{
+  background:  rgb(28, 170, 143);
+  color: white;
+}
+
+@media(max-width:1200px){
+  header .head img{
+    width: 450px;
+    height: 400px;
+    left: 55%;
+    top: -45%;
+  }
+
+  header .right{
+    left: 50%;
+  }
+}
+
+@media(max-width:1000px){
+  header{
+
+    padding: 60px;
+  }
+
+  header .head img{
+    display: none;
+  }
+
+  header .right{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width:800px){
+  header{
+    padding: 70px;
+  }
+
+  header .head img{
+    display: none;
+  }
+
+  header .right{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #about-me {
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+}
+
 
 
 
