@@ -137,7 +137,6 @@ header .head .contact:hover{
 }
 
 @media(max-width:800px){
-
   header{
     padding: 20px;
   }
@@ -154,15 +153,22 @@ header .head .contact:hover{
 
   #about-me {
     padding: 50px 50px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
     font-size: 18px;
   }
 
   #about-me #illustration{
     display: none;
+  }
+
+  @media(max-width:315px){
+    header{
+      padding: 5px;
+    }
+
+    #about-me {
+      padding: 40px 10px;
+      font-size: 12px;
+    }
   }
 }
 
