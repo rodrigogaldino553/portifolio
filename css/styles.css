@@ -65,7 +65,7 @@ header .head .contact:hover{
   font-weight: bold;
 }
 
-#about-me img{
+#about-me #illustration{
   width: 650px;
   height: 600px;
 }
@@ -126,8 +126,9 @@ header .head .contact:hover{
 }
 
 @media(max-width:800px){
+
   header{
-    padding: 70px;
+    padding: 20px;
   }
 
   header .head img{
@@ -135,16 +136,22 @@ header .head .contact:hover{
   }
 
   header .right{
+    font-size: 12px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   #about-me {
-    padding: 20px 50px;
+    padding: 50px 50px;
+    flex-direction: column;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  #about-me #illustration{
+    display: none;
   }
 }
 
