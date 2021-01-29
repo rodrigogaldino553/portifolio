@@ -11,8 +11,18 @@ body {
       --secondary-color: #54e346;*/
   /*--primary-color: #590995;
   --secondary-color:#03c4a1;*/
-  --primary-color: #00005c;
+  
+  /* o mais da hr 00005c */
+  --primary-color: #120078 ;
   --secondary-color: #28df99;
+  
+  /*marsela mostarda
+  --primary-color: rgb(88, 29, 34);
+  --secondary-color: #ffdb58;*/
+
+  /*--primary-color: #28abb9;
+  --secondary-color: #a8dda8;*/
+
 }
 
 header {
