@@ -3,11 +3,24 @@
 }
 
 body{
+  /*--primary-color: rgb(8, 49, 86);
+  --secondary-color: rgb(28, 170, 143);
+  --primary-color: #103070; */
 
+
+  /*    --primary-color: #153e90;
+      --secondary-color: #54e346;*/
+
+
+  /*--primary-color: #590995;
+  --secondary-color:#03c4a1;*/
+
+  --primary-color: #00005c;
+  --secondary-color:#28df99;
 }
 
 header{
-  background: rgb(8, 49, 86);
+  background: var(--primary-color);
   height: 600px;
   padding: 20px 20px 20px 100px;
 }
@@ -23,6 +36,10 @@ header .head{
   top: 25%;
 }
 
+header .head span{
+  color: var(--secondary-color);
+}
+
 header .head img{
   width: 650px;
   height: 600px;
@@ -32,19 +49,19 @@ header .head img{
 }
 
 header .head .contact{
-  background: rgb(28, 170, 143);
+  background: var(--secondary-color);
   color: white;
   margin-right: 8px;
 }
 
 header .head .contact:hover{
   background: white;
-  color: rgb(28, 170, 143);
-  border: 1px solid rgb(28, 170, 143);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 .a-btn{
-  background: rgb(8, 49, 86);
+  background: var(--primary-color);
   text-decoration: none;
 }
 
@@ -86,14 +103,23 @@ header .head .contact:hover{
 }
 
 #works{
-  background: rgb(8, 49, 86);
+  background: var(--primary-color);
   padding: 100px 20px;
-  height: fit-content;
+  display: flex;
 }
 
 #works .custom-card{
-  background:  rgb(28, 170, 143);
+  background:  var(--secondary-color);
   color: white;
+  width: 18rem;
+  transition: 400ms;
+  cursor: pointer;
+  margin: 15px;
+}
+
+#works .custom-card:hover{
+  width: 20rem;
+  border: solid 5px;
 }
 
 @media(max-width:1200px){
@@ -171,10 +197,3 @@ header .head .contact:hover{
     }
   }
 }
-
-
-
-
-
-
-
