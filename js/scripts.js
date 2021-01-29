@@ -1,11 +1,27 @@
 
-function cardClick(id){
-    let card = document.getElementById(id)
-    let img = card.childNodes[1]
-    console.log(img)
+function cardClick(id) {
+    let img = document.getElementById(id)
+    let projectIMG = document.querySelector('.hide')
+    let projectPicture = document.querySelector('#project-picture')
 
+
+    projectIMG.classList.remove('hide')
+    projectIMG.classList.add('project-img')
+
+    img = img.getAttribute('src')
+    projectPicture.setAttribute('src', img)
+
+    let closeBTN = document.querySelector('#close-btn')
+    closeBTN.addEventListener('click', () => { close() })
 }
 
+function close() {
+    let projectIMG = document.querySelector('.project-img')
+
+    projectIMG.classList.remove('project-img')
+    projectIMG.classList.add('hide')
+
+}
 
 
 
