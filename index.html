@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="rgb(28, 170, 143)">
     <title>Web Developer Freelancer</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -36,8 +35,8 @@
                 </div>
             </ul>
             <div class="head" style="color: white;">
-                <h5 style="font-weight: 300;"><span style="color: rgb(28, 170, 143);">&lt;head&gt;</span>Hey, whats
-                    up?<span style="color: rgb(28, 170, 143);">&lt;/head&gt;</span></h5>
+                <h5 style="font-weight: 300;"><span>&lt;head&gt;</span>Hey, whats
+                    up?<span>&lt;/head&gt;</span></h5>
                 <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I'm Rodrigo, a FullStack <br> Web
                     Developer</h1>
                 <div class="d-flex" style="margin-top: 30px;">
@@ -53,7 +52,8 @@
                 <p>I am 17 years old self tought Web Developer actually bassed in Minas Gerais, Brazil.</p>
 
                 <p>I've worked with some own projects and some projects as freelancer. <br> I specialize in developing
-                    web apps. My code Skills are JavaScript, Node, Express, HTML, CSS and Bootstrap.</p>
+                    web apps and responsive web apps. My code Skills are JavaScript, Node, Express, MongoDB, MySQL,
+                    HTML, CSS, React and Bootstrap.</p>
 
                 <p>Want to know more? Drop me a line <br> <a
                         href=mailto:galdinorodrigo553@protonmail.com?subject=Contact From
@@ -71,8 +71,26 @@
             <img id="illustration" src="./assets/img/undraw_web_developer_p3e5.svg" alt="developer illustration">
         </div>
         <div id="works">
-            <div class="card custom-card" style="width: 18rem;">
-                <img  src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
+            <div class="hide">
+                <img id="project-picture" src="">
+                <button id="close-btn" onclick="close()">X</button>
+            </div>
+            <div class="card custom-card" onclick="cardClick(0)">
+                <img id="0"
+                    src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
+                    class="card-img-top" alt="Pokedex ScreenShot">
+                <div class="card-body">
+                    <h5 class="card-title">Pokedex</h5>
+                    <p class="card-text">I build this project alone, was a challange for me because was the first
+                        project using bootstrap.</p>
+                    <p class="card-text">I use an API to get informations about pokemons and other API to get pictures.
+                    </p>
+                    <p class="card-text">I used.<br> JavaScript, Bootstrap, HTML, CSS</p>
+                </div>
+            </div>
+            <div class="card custom-card" onclick="cardClick(1)">
+                <img id="1"
+                    src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
                     class="card-img-top" alt="Pokedex ScreenShot">
                 <div class="card-body">
                     <h5 class="card-title">Pokedex</h5>
@@ -92,6 +110,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
