@@ -10,10 +10,15 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -76,7 +81,39 @@
                 <img id="project-picture" src="">
                 <button id="close-btn" onclick="close()">X</button>
             </div>
-            <div class="card custom-card" onclick="cardClick(0)">
+
+            <div class="slider owl-carousel">
+                <div class="card custom-card" onclick="cardClick(0)">
+                    <img id="0"
+                        src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
+                        class="card-img-top" alt="Pokedex ScreenShot">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokedex</h5>
+                        <p class="card-text">I build this project alone, was a challange for me because was the first
+                            project using bootstrap.</p>
+                        <p class="card-text">I use an API to get informations about pokemons and other API to get
+                            pictures.
+                        </p>
+                        <p class="card-text">I used.<br> JavaScript, Bootstrap, HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="card custom-card" onclick="cardClick(1)">
+                    <img id="1"
+                        src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
+                        class="card-img-top" alt="Pokedex ScreenShot">
+                    <div class="card-body">
+                        <h5 class="card-title">Pokedex</h5>
+                        <p class="card-text">I build this project alone, was a challange for me because was the first
+                            project using bootstrap.</p>
+                        <p class="card-text">I use an API to get informations about pokemons and other API to get
+                            pictures.
+                        </p>
+                        <p class="card-text">I used.<br> JavaScript, Bootstrap, HTML, CSS</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--div class="card custom-card" onclick="cardClick(0)">
                 <img id="0"
                     src="https://media-exp1.licdn.com/dms/image/C4D22AQFFJ5zc5fSptQ/feedshare-shrink_800/0/1607834136062?e=1614816000&v=beta&t=SUceDuIO3c8q8_9OPgRgWimybsRMJrzFEi50aRGgtt0"
                     class="card-img-top" alt="Pokedex ScreenShot">
@@ -101,7 +138,7 @@
                     </p>
                     <p class="card-text">I used.<br> JavaScript, Bootstrap, HTML, CSS</p>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 
@@ -111,6 +148,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(".slider").owlCarousel({
+            loop:true,
+            autoplay:true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause:true
+        })
+    </script>
 
     <script src="./js/scripts.js"></script>
 </body>

@@ -109,17 +109,31 @@ header .head .contact:hover {
 
 #works {
   background: var(--primary-color);
-  padding: 100px 20px;
+  padding: 50px 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+#works .slider{
+  max-width: 1150px;
   display: flex;
 }
 
-#works .custom-card {
+
+#works .slider .custom-card {
+  flex: 1;
+  object-fit: cover;
   background: var(--secondary-color);
   color: white;
   width: 18rem;
   transition: 400ms;
   cursor: pointer;
   margin: 15px;
+}
+
+#works .slider .custom-card p{
+  text-align: justify;
 }
 
 #works .custom-card:hover {
@@ -164,9 +178,7 @@ header .head .contact:hover {
 }
 
 .project-img button:hover {
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  transform: scale(0.8);
 }
 
 .hide {
