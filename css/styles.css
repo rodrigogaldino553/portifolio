@@ -136,18 +136,33 @@ header .head .contact:hover {
   object-fit: cover;
   background: var(--secondary-color);
   color: white;
-  width: 18rem;
+  width: 20rem;
+  height: 34rem;
   transition: 400ms;
   cursor: pointer;
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#works .slider .custom-card img{
+  height: 140px;
 }
 
 #works .slider .custom-card p{
   text-align: justify;
 }
 
+#works .slider .custom-card a{
+  color: rgb(90, 88, 88);
+  font-weight: bold;
+  position: relative;
+  bottom: 3%;
+}
+
 #works .custom-card:hover {
-  width: 20rem;
+  width: 22rem;
   border: solid 5px;
 }
 
