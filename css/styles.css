@@ -43,6 +43,10 @@ header .head {
   top: 25%;
 }
 
+header .head h1{
+  font-family: Poppins;
+}
+
 header .head span {
   color: var(--secondary-color);
 }
@@ -109,10 +113,16 @@ header .head .contact:hover {
 
 #works {
   background: var(--primary-color);
-  padding: 50px 20px;
+  padding: 60px 20px 50px 20px;
   display: grid;
   place-items: center;
   text-align: center;
+}
+
+#works h3{
+  color: var(--secondary-color);
+  font-family: Quicksand;
+  margin-bottom: 20px;
 }
 
 #works .slider{
@@ -181,9 +191,11 @@ header .head .contact:hover {
   transform: scale(0.8);
 }
 
+
 .hide {
   display: none;
 }
+
 
 @media(max-width:1200px) {
   header .head img {

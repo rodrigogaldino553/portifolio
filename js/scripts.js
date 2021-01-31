@@ -1,3 +1,6 @@
+const closeBTN = document.querySelector('#close-btn')
+
+
 
 function cardClick(id) {
     let img = document.getElementById(id)
@@ -11,7 +14,9 @@ function cardClick(id) {
     img = img.getAttribute('src')
     projectPicture.setAttribute('src', img)
 
-    let closeBTN = document.querySelector('#close-btn')
+    const closeContainer = document.querySelector('.project-img')
+
+    closeContainer.addEventListener('click', () => {close()})
     closeBTN.addEventListener('click', () => { close() })
 }
 
@@ -22,6 +27,7 @@ function close() {
     projectIMG.classList.add('hide')
 
 }
+
 
 
 
