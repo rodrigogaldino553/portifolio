@@ -228,7 +228,7 @@ header .head .contact:hover {
   }
 }
 
-@media(max-width:1000px) {
+@media(max-width:1170px) {
   header {
     padding: 60px;
   }
@@ -242,10 +242,17 @@ header .head .contact:hover {
   #about-me #illustration {
     display: none;
   }
+  #works{
+    padding: 0;
+  }
+  #works .slider{
+    max-width: 350px;
+  }
   .project-img img {
     width: 70%;
     height: 50%;
   }
+
 }
 
 @media(max-width:800px) {
@@ -267,12 +274,26 @@ header .head .contact:hover {
   #about-me #illustration {
     display: none;
   }
+  #works{
+    padding: 0;
+  }
+  #works .slider{
+    max-width: 350px;
+  }
   .project-img img {
     width: 75%;
     height: 30%;
   }
   .project-img button {
     margin-top: -250px;
+  }
+  @media(max-width:320px) {
+    #works{
+      padding: 0;
+    }
+    #works .slider{
+      max-width: 320px;
+    }
   }
   @media(max-width:315px) {
     header {
@@ -281,6 +302,9 @@ header .head .contact:hover {
     #about-me {
       padding: 40px 10px;
       font-size: 12px;
+    }
+    #works{
+      padding: 0;
     }
     .project-img img {
       width: 75%;
