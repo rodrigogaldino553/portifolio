@@ -294,6 +294,11 @@ header .head .contact:hover {
     #works .slider{
       max-width: 320px;
     }
+    
+    .project-img img {
+      width: 75%;
+      height: 10%;
+    }
   }
   @media(max-width:315px) {
     header {
