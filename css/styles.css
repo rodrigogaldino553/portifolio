@@ -250,7 +250,7 @@ header .head .contact:hover {
   }
   .project-img img {
     width: 70%;
-    height: 50%;
+    height: 40%;
   }
 
 }
@@ -308,7 +308,7 @@ header .head .contact:hover {
     }
     .project-img img {
       width: 75%;
-      height: 20%;
+      height: 10%;
     }
     .project-img button {
       margin-top: -100px;
