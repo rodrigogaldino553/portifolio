@@ -4,25 +4,24 @@
 }
 
 body {
-  /*--primary-color: rgb(8, 49, 86);
-  --secondary-color: rgb(28, 170, 143);
-  --primary-color: #103070; */
-  /*    --primary-color: #153e90;
-      --secondary-color: #54e346;*/
-  /*--primary-color: #590995;
-  --secondary-color:#03c4a1;*/
-  
-  /* o mais da hr 00005c */
   --primary-color: #120078 ;
   --secondary-color: #28df99;
-  
-  /*marsela mostarda
-  --primary-color: rgb(88, 29, 34);
-  --secondary-color: #ffdb58;*/
 
-  /*--primary-color: #28abb9;
-  --secondary-color: #a8dda8;*/
+}
 
+.whatsapp{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  background: url('../assets/img/whatsapp-icon.svg') no-repeat;
+  bottom: 2%;
+  right: 2%;
+  z-index: 100;
+  transition: 400ms;
+}
+
+.whatsapp:hover{
+  transform: scale(1.2);
 }
 
 header {
@@ -162,8 +161,7 @@ header .head .contact:hover {
 }
 
 #works .custom-card:hover {
-  width: 22rem;
-  border: solid 5px;
+  transform: scale(1.1);
 }
 
 .project-img {
