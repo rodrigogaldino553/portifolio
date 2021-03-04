@@ -248,75 +248,11 @@ header .head .contact:hover {
   #works .slider{
     max-width: 350px;
   }
-  .project-img img {
-    width: 70%;
-    height: 40%;
+
+ 
+  #works .slider .custom-card .picture{
+    display: none;
   }
 
 }
 
-@media(max-width:800px) {
-  header {
-    padding: 20px;
-  }
-  header .head img {
-    display: none;
-  }
-  header .right {
-    font-size: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #about-me {
-    padding: 50px 20px;
-    font-size: 16px;
-  }
-  #about-me #illustration {
-    display: none;
-  }
-  #works{
-    padding: 0;
-  }
-  #works .slider{
-    max-width: 350px;
-  }
-  .project-img img {
-    width: 75%;
-    height: 30%;
-  }
-  .project-img button {
-    margin-top: -250px;
-  }
-  @media(max-width:320px) {
-    #works{
-      padding: 0;
-    }
-    #works .slider{
-      max-width: 320px;
-    }
-    
-    .project-img img {
-      width: 75%;
-      height: 10%;
-    }
-  }
-  @media(max-width:315px) {
-    header {
-      padding: 5px;
-    }
-    #about-me {
-      padding: 40px 10px;
-      font-size: 12px;
-    }
-    #works{
-      padding: 0;
-    }
-    .project-img img {
-      width: 75%;
-      height: 10%;
-    }
-    .project-img button {
-      margin-top: -100px;
-    }
-  }
-}
