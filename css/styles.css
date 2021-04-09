@@ -1,6 +1,5 @@
 * {
   font-family: 'Quicksand', sans-serif;
-  ;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
   right: 2%;
   z-index: 100;
   transition: 400ms;
+  overflow: hidden;
 }
 
 .whatsapp:hover{
@@ -112,10 +112,11 @@ header .head .contact:hover {
 
 #works {
   background: var(--primary-color);
-  padding: 60px 20px 50px 20px;
-  display: grid;
-  place-items: center;
-  text-align: center;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #works h3{
@@ -125,46 +126,65 @@ header .head .contact:hover {
 }
 
 #works .slider{
-  max-width: 1150px;
+  max-width: 750px;
+  width: 95% !important;
   display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
+#works .slider::-webkit-scrollbar{
+  display: none;
+}
 
-#works .slider .custom-card {
-  flex: 1;
-  object-fit: cover;
+#works .custom-card{
+  min-width: 270px;
+  height: 180px;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 8px;
   background: var(--secondary-color);
   color: white;
-  width: 20rem;
-  height: 34rem;
-  transition: 400ms;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
   cursor: pointer;
-  margin: 15px;
+}
+
+#works .custom-card h3{
+  color:white;
+  font-weight: 700;
+}
+
+.actions{
   display: flex;
-  flex-direction: column;
-  
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#works .slider .custom-card img{
-  height: 140px;
-}
-
-#works .slider .custom-card p{
-  text-align: justify;
-}
-
-#works .slider .custom-card a{
-  color: rgb(90, 88, 88);
+.actions button{
+  border-radius: 50px;
+  border: 0;
   font-weight: bold;
-  position: relative;
-  bottom: 3%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
-#works .custom-card:hover {
-  transform: scale(1.1);
+.actions button#prev{
+  margin-left: -25px;
+}
+
+.actions button#next{
+  margin-right: -25px;
 }
 
 .project-img {
+  object-fit: cover;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -212,10 +232,11 @@ header .head .contact:hover {
 
 @media(max-width:1200px) {
   header .head img {
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
     left: 55%;
     top: -45%;
+    overflow-x: hidden;
   }
   header .right {
     left: 50%;
@@ -223,6 +244,7 @@ header .head .contact:hover {
   #about-me #illustration {
     width: 450px;
     height: 400px;
+    overflow-x: hidden;
   }
 }
 
@@ -232,22 +254,9 @@ header .head .contact:hover {
   }
   header .right {
     left: 50%;
-    transform: translateX(-50%);
+    transform: tr anslateX(-50%);
   }
-  header .head img {
-    display: none;
-  }
-  #about-me #illustration {
-    display: none;
-  }
-  #works{
-    padding: 0;
-  }
-  #works .slider{
-    max-width: 350px;
-  }
-
- 
+   
   #works .slider .custom-card .picture{
     display: none;
   }
