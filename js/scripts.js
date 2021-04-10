@@ -35,8 +35,6 @@ var scroller = 0
 
 
 function walk(){
-  console.log(scroller)
-  //if(scroller => 750){scroller = 0}
   scroller += scrollNext
   slider.scrollTo(scroller, 0)
   if(scroller > 840){
