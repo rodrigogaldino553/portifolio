@@ -1,5 +1,7 @@
 * {
   font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -128,6 +130,7 @@ header .head .contact:hover {
 #works .slider{
   max-width: 750px;
   width: 95% !important;
+  scroll-behavior: smooth;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -145,11 +148,16 @@ header .head .contact:hover {
   border-radius: 8px;
   background: var(--secondary-color);
   color: white;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
+  transition: all 0.4s;
   user-select: none;
   cursor: pointer;
+}
+
+#works .custom-card:hover{
+  transform: scale(1.04);
+  will-change: transform;
+  box-shadow: 2px 2px 5px black;
+  border: 2px solid white;
 }
 
 #works .custom-card h3{

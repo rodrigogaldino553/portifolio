@@ -28,55 +28,24 @@ function close() {
 
 }
 
-let slidePosition = 0
-const slides = document.getElementsByClassName('item')
-const totalSlides = slides.length
+const slider = document.querySelector('.slider')
 
-document.
-          getElementById('next')
-          .addEventListener('click', () => {
-            moveToNext()
-          })
-
-document.
-          getElementById('prev')
-          .addEventListener('click', () => {
-            moveToPrev()
-          })
+const scrollNext = 280 //valeu to move on X, it's the same length of a slider card, to one and hide one
+var scroller = 0
 
 
-function updateSlidePosition() {
-  for (let c = 0; c < totalSlides; c++) {
-    slides[c].classList.remove('visible')
-    
+function walk(){
+  console.log(scroller)
+  //if(scroller => 750){scroller = 0}
+  scroller += scrollNext
+  slider.scrollTo(scroller, 0)
+  if(scroller > 840){
+    scroller = 0
   }
-
-  slides[slidePosition].classList.add('visible')
 }
-
-function moveToNext(){
-  if(slidePosition === totalSlides - 1){
-    slidePosition = 0
-  }else{
-    slidePosition ++
-  }
-
-
-  updateSlidePosition()
-}
-
-function moveToPrev(){
-  if(slidePosition === 0){
-    slidePosition = totalSlides - 1
-  }else{
-    slidePosition --
-  }
-  updateSlidePosition()
-}
-
 
 function automate(){
-  setInterval(moveToNext, 3000)
+  setInterval(walk, 3000)
 }
 
 
