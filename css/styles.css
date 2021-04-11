@@ -171,6 +171,14 @@ header .head .contact:hover {
   font-weight: 700;
 }
 
+#works .custom-card a{
+  color: rgb(90, 88, 88);
+  font-weight: bold;
+  position: relative;
+  bottom: 3%;
+  left: 40%;
+}
+
 .project-img {
   object-fit: cover;
   position: fixed;
