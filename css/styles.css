@@ -1,7 +1,6 @@
 * {
   font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -112,6 +111,14 @@ header .head .contact:hover {
   margin: 0 5px 0 30px;
 }
 
+#about-me .networks a{
+  transition: all 0.4s;
+}
+
+#about-me .networks a:hover{
+  transform: scale(1.2);
+}
+
 #works {
   background: var(--primary-color);
   padding: 20px 5px;
@@ -124,13 +131,12 @@ header .head .contact:hover {
 #works h3{
   color: var(--secondary-color);
   font-family: Quicksand;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 #works .slider{
-  max-width: 750px;
+  max-width: 840px;
   width: 95% !important;
-  scroll-behavior: smooth;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -142,9 +148,9 @@ header .head .contact:hover {
 
 #works .custom-card{
   min-width: 270px;
-  height: 180px;
+  height: 220px;
   padding: 4px;
-  margin: 4px;
+  margin: 6px;
   border-radius: 8px;
   background: var(--secondary-color);
   color: white;
@@ -154,7 +160,7 @@ header .head .contact:hover {
 }
 
 #works .custom-card:hover{
-  transform: scale(1.04);
+  transform: scale(1.06);
   will-change: transform;
   box-shadow: 2px 2px 5px black;
   border: 2px solid white;
@@ -163,32 +169,6 @@ header .head .contact:hover {
 #works .custom-card h3{
   color:white;
   font-weight: 700;
-}
-
-.actions{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.actions button{
-  border-radius: 50px;
-  border: 0;
-  font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
-.actions button#prev{
-  margin-left: -25px;
-}
-
-.actions button#next{
-  margin-right: -25px;
 }
 
 .project-img {
