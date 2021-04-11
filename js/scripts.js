@@ -28,7 +28,40 @@ function close() {
 
 }
 
+function openLink(link){
+  window.open(link)
+}
 
+var sliderWorks = document.querySelector('.working')
+const slider = document.querySelector('.slider')
+const scrollNext = 280 //valeu to move on X, it's the same length of a slider card, to one and hide one
+var scroller = 0
+
+
+slider.addEventListener('mouseover', ()=>{
+  sliderWorks = ""
+})
+
+slider.addEventListener('mouseout', ()=>{
+  sliderWorks = document.querySelector('.working')
+})
+
+function walk(){
+  if(sliderWorks === "") return false
+  scroller += scrollNext
+  if(scroller > 840){
+    scroller = 0
+  }
+  sliderWorks.scrollTo(scroller, 0)
+
+}
+
+function automate(){
+  setInterval(walk, 3000)
+}
+
+
+automate()
 
 
 
