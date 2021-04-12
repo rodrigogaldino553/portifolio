@@ -225,7 +225,6 @@ header .head .contact:hover {
   display: none;
 }
 
-
 @media(max-width:1200px) {
   header .head img {
     width: 400px;
