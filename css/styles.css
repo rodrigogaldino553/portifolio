@@ -136,7 +136,7 @@ header .head .contact:hover {
 
 #works .slider{
   max-width: 840px;
-  width: 95% !important;
+  width: 98% !important;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
