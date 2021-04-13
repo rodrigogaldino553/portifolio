@@ -34,12 +34,12 @@ function openLink(link){
 
 var sliderWorks = document.querySelector('.working')
 const slider = document.querySelector('.slider')
-const scrollNext = 280 //valeu to move on X, it's the same length of a slider card, to one and hide one
+const scrollNext = 280 //value to move on X, it's the same length of a slider card, to one and hide one
 var scroller = 0
 
 
 slider.addEventListener('mouseover', ()=>{
-  sliderWorks = ""
+  sliderWorks = ""//to stop the slider when the mouse is in over on slider box
 })
 
 slider.addEventListener('mouseout', ()=>{
