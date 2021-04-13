@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Safe Prototype - Preview</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsivity.css">
+
+    <style>
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            display: flex;
+            box-shadow: 2px 2px 5px black;
+            margin: 30px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="./Desktop-HD.png" alt="desktop">
-    <img src="./Mobile-Portrait.png" alt="responsive mobile">
+    <div class="content">
+        <h1>All Safe Security</h1>
+        <div class="img">
+            <label for="mob"><h2>Mobile</h2></label>
+            <img id="mob" src="./Mobile-Portrait.png" alt="responsive mobile">
+        </div>
+        <div class="img">
+            <label for="desk"><h2>Desktop</h2></label>
+            <img width="100%" id="desk" src="./Desktop-HD.png" alt="responsive mobile">
+        </div>
+
+    </div>
 </body>
+
 </html>
