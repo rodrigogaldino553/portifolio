@@ -29,7 +29,7 @@ function close() {
 }
 
 function openLink(link){
-  window.open('./projects-thumb/all-safe.html')//link)
+  window.open(link)
 }
 
 var sliderWorks = document.querySelector('.working')
