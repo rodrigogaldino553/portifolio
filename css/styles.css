@@ -77,7 +77,7 @@ header .head .contact:hover {
 }
 
 .nav-a:hover{
-  color: #0a58ca;
+  color: #0a58ca !important;
 }
 
 #about-me {
