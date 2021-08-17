@@ -44,6 +44,10 @@
 }
 
 @media(max-width:660px){
+    header{
+        background: var(--primary-color);
+    }
+    
     header .head img {
         display: none;
       }  
