@@ -142,12 +142,7 @@ header .head .contact:hover {
   max-width: 840px;
   width: 98% !important;
   display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-#works .slider::-webkit-scrollbar{
-  display: none;
+  scroll-snap-type: x mandatory;
 }
 
 #works .custom-card{
@@ -161,6 +156,7 @@ header .head .contact:hover {
   transition: all 0.4s;
   user-select: none;
   cursor: pointer;
+  scroll-snap-align: start;
 }
 
 #works .custom-card:hover{
