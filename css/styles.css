@@ -142,6 +142,8 @@ header .head .contact:hover {
   max-width: 840px;
   width: 98% !important;
   display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
 }
 
