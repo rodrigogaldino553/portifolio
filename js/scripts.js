@@ -61,7 +61,7 @@ function automate(){
 }
 
 
-automate()
+//automate()
 
 
 
