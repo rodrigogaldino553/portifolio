@@ -45,7 +45,7 @@
 
 @media(max-width:660px){
     header{
-        background: var(--primary-color);
+        background: linear-gradient(15deg, var(--primary-color) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
     }
     
     header .head img {
