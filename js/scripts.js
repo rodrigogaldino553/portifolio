@@ -10,7 +10,7 @@ function getAge(){
         year: today.getFullYear()
     }// the date of today
     const bornDate = {day: 30, month: 4, year: 2003}// will receive the date i was born, I think that it can be in the date format to make easy to compair
-    if(now.month > bornDate.month || now.month == bornDate.month && now.day == bornDate.day)){
+    if(now.month > bornDate.month || (now.month == bornDate.month && now.day == bornDate.day)){
     	current_age = now.year - bornDate.year
     }else{
     	current_age = (now.year - bornDate.year) - 1
