@@ -1,3 +1,41 @@
+//import works from './works'
+// import json file with works is not working, so i gonna put them right here
+
+works = [
+  {
+    "name": "taltal",
+    "description": "blablablablablablablablablabla",
+    "cover_picture": "https://www.hypeness.com.br/1/2021/07/d8d83d87-garfield_ferdinand_d.jpg",
+    "link": "0"
+  },
+  {
+    "name": "Pokedex",
+    "description": "Was a challange for me because it was the first project using bootstrap. I had use APIs to get pokemons infos and pictures.<br>Technologies: HTML, CSS, Javascript and Bootstrap",
+    "cover_picture": "https://github.com/rodrigogaldino553/portifolio/blob/main/assets/projects-thumb/pokedex.jpeg?raw=true",
+    "link": "https://rodrigogaldino553.github.io/Pokedex/"
+  },
+  {
+    "name": "Pokedex",
+    "description": "Was a challange for me because it was the first project using bootstrap. I had use APIs to get pokemons infos and pictures.<br>Technologies: HTML, CSS, Javascript and Bootstrap",
+    "cover_picture": "https://github.com/rodrigogaldino553/portifolio/blob/main/assets/projects-thumb/pokedex.jpeg?raw=true",
+    "link": "https://rodrigogaldino553.github.io/Pokedex/"
+  }
+]
+
+const card_template = (work) => {
+  return `
+    <div class="card custom-card">
+      <img src="${work.cover_picture}" class="card-img-top" alt="${work.name}">
+      <div class="card-body">
+        <h5 class="card-title">${work.name}</h5>
+        <p class="card-text">${work.description}</p>
+        <a href="${work.link}" target="_blank" class="btn btn-outline-dark">Visit</a>
+      </div>
+    </div>
+  `
+}
+
+
 function getAge(){
 	let current_age
     let today = new Date()
@@ -22,9 +60,12 @@ function openLink(link){
 
 function show_works(){
   const slider = document.getElementById('slider')
-  const works = works
+  //debugger
+  
+  works.forEach(work => {
+    slider.innerHTML += card_template(work)
+  });
 
-  debugger
 }
 
 show_works()
