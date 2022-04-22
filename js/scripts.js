@@ -29,7 +29,7 @@ const card_template = (work) => {
       <div class="card-body">
         <h5 class="card-title">${work.name}</h5>
         <p class="card-text">${work.description}</p>
-        <a href="${work.link}" target="_blank" class="btn btn-outline-dark">Visit</a>
+        <a href="${work.link}" target="_blank" class="btn btn-outline-light">Visit</a>
       </div>
     </div>
   `
@@ -60,7 +60,6 @@ function openLink(link){
 
 function show_works(){
   const slider = document.getElementById('slider')
-  //debugger
   
   works.forEach(work => {
     slider.innerHTML += card_template(work)
@@ -68,11 +67,9 @@ function show_works(){
 
 }
 
-show_works()
-
-var sliderWorks = document.querySelector('#slider')
+/*var sliderWorks = document.querySelector('#slider')
 const slider = document.querySelector('#slider')
-const scrollNext = 285 //valeu to move on X, it's the same length of a slider card, to one and hide one
+const scrollNext = 285 //valeu to move on X, it's the same length of a slider card + its margin, to one and hide one
 var scroller = 0
 
 
@@ -84,8 +81,10 @@ slider.addEventListener('mouseout', ()=>{
   sliderWorks = document.querySelector('#slider')
 })
 
-function walk(){
+
+function scroll(){
   if(sliderWorks === "") return false
+
   scroller += scrollNext
   if(scroller > 840){
     scroller = 0
@@ -94,12 +93,17 @@ function walk(){
 
 }
 
-function automate(){
-  setInterval(walk, 3000)
+function auto_scroll(){
+  setInterval(scroll, 3000)
+}*/
+
+
+function init(){
+  show_works()
+  // auto_scroll()
 }
 
-
-automate()
+init()
 
 
 

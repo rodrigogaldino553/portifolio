@@ -246,7 +246,8 @@ header .head .contact:hover {
   min-width: 280px;
   box-shadow: 2px 2px 5px black;
   border-radius: 8px;
-  background-color: rgb(238, 238, 238);
+  background-color: #212529;
+  color: white;
   transition: .4s all;
   margin-right: 10px;
 }
