@@ -70,35 +70,37 @@ function show_works(){
 
 show_works()
 
-/*var now = 0
-let img = document.getElementById('view')
+var sliderWorks = document.querySelector('#slider')
+const slider = document.querySelector('#slider')
+const scrollNext = 285 //valeu to move on X, it's the same length of a slider card, to one and hide one
+var scroller = 0
 
 
-function slide(mod) {
-    if (mod == 1) {
-        if (now >= 11) {
-            now = 0
-        } else {
-            now++
-        }
-    } else {
-        if (now <= 0) {
-            now = 11
-        } else {
-            now--
-        }
-    }
+slider.addEventListener('mouseover', ()=>{
+  sliderWorks = ""
+})
 
-    img.setAttribute('src', `./assets/${now}.jpg`)
-    if (now <= 0) {
-        now = 11
-    } else if (now >= 11) {
-        now = 0
-    }
-}*/
+slider.addEventListener('mouseout', ()=>{
+  sliderWorks = document.querySelector('#slider')
+})
+
+function walk(){
+  if(sliderWorks === "") return false
+  scroller += scrollNext
+  if(scroller > 840){
+    scroller = 0
+  }
+  sliderWorks.scrollTo(scroller, 0)
+
+}
+
+function automate(){
+  setInterval(walk, 3000)
+}
 
 
-//automate()
+automate()
+
 
 
 
