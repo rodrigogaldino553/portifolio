@@ -199,18 +199,51 @@ header .head .contact:hover {
 
 #works #slider{
   display: flex;
+  max-width: 840px;
+  width: 98% !important;
   padding: 30px 5px;
   overflow-x: scroll;
   overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+#works ::-webkit-scrollbar{
+  background: transparent;
+}
+
+#works ::-webkit-scrollbar-track{
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 8px;
+}
+
+#works ::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+#works ::-webkit-scrollbar-thumb:hover{
+  background: #28df99b6;
+  border-radius: 8px;
 }
 
 #works #slider ::-webkit-scrollbar{
-  color: #28df99;
+  width: 5px;
+}
+
+#works #slider ::-webkit-scrollbar-track{
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+
+#works #slider ::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 8px;
 }
 
 #works .custom-card{
   height: 25rem;
   width: 20rem;
+  min-width: 280px;
   box-shadow: 2px 2px 5px black;
   border-radius: 8px;
   background-color: rgb(238, 238, 238);
@@ -220,7 +253,7 @@ header .head .contact:hover {
 
 #works .custom-card:hover{
   transform: scale3d(1.05, 1.05, 1.05);
-  box-shadow: 0px 0px 10px 4px white;
+  box-shadow: 0px 0px 10px 4px #28df99;
 }
 
 #works .custom-card img{
