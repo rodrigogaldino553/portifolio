@@ -147,39 +147,7 @@ header .head .contact:hover {
   scroll-snap-type: x mandatory;
 }
 
-#works .custom-card{
-  min-width: 280px;
-  height: 240px;
-  padding: 4px;
-  margin: 6px;
-  border-radius: 8px;
-  background: var(--secondary-color);
-  color: white;
-  transition: all 0.4s;
-  user-select: none;
-  cursor: pointer;
-  scroll-snap-align: start;
-}
 
-#works .custom-card:hover{
-  transform: scale(1.06);
-  will-change: transform;
-  box-shadow: 2px 2px 5px black;
-  border: 2px solid white;
-}
-
-#works .custom-card h3{
-  color:white;
-  font-weight: 700;
-}
-
-#works .custom-card a{
-  color: rgb(90, 88, 88);
-  font-weight: bold;
-  position: relative;
-  bottom: 3%;
-  left: 40%;
-}
 
 .project-img {
   object-fit: cover;
@@ -222,6 +190,89 @@ header .head .contact:hover {
   transform: scale(0.8);
 }
 
+#works {
+  padding-bottom: 5rem;
+}
+#works h3{
+  margin-bottom: 10px;
+}
+
+#works #slider{
+  display: flex;
+  max-width: 840px;
+  width: 98% !important;
+  padding: 30px 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+#works ::-webkit-scrollbar{
+  background: transparent;
+}
+
+#works ::-webkit-scrollbar-track{
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 8px;
+}
+
+#works ::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+#works ::-webkit-scrollbar-thumb:hover{
+  background: #28df99b6;
+  border-radius: 8px;
+}
+
+#works #slider ::-webkit-scrollbar{
+  width: 5px;
+}
+
+#works #slider ::-webkit-scrollbar-track{
+  background: var(--primary-color);
+  border-radius: 8px;
+}
+
+#works #slider ::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+#works .custom-card{
+  height: 25rem;
+  width: 20rem;
+  min-width: 280px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 8px;
+  background-color: #212529;
+  color: white;
+  transition: .4s all;
+  margin-right: 10px;
+}
+
+#works .custom-card:hover{
+  transform: scale3d(1.05, 1.05, 1.05);
+  box-shadow: 0px 0px 10px 4px #28df99;
+}
+
+#works .custom-card img{
+  height: 10rem;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+#works .custom-card p{
+  overflow-y: scroll;
+  height: 8rem;
+}
+
+#works .custom-card .check-btn{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
 
 .hide {
   display: none;
@@ -253,10 +304,7 @@ header .head .contact:hover {
     left: 50%;
     transform: tr anslateX(-50%);
   }
-   
-  #works .slider .custom-card .picture{
-    display: none;
-  }
+
 
 }
 

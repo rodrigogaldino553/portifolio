@@ -1,0 +1,28 @@
+{
+  "works" : [
+              {
+                "name": "taltal",
+                "description": "blablablablablablablablablabla",
+                "cover_picture": "https://www.hypeness.com.br/1/2021/07/d8d83d87-garfield_ferdinand_d.jpg",
+                "link": "0"
+              },
+              {
+                "name": "Pokedex",
+                "description": "Was a challange for me because it was the first project using bootstrap. I had use APIs to get pokemons infos and pictures.<br>Technologies: HTML, CSS, Javascript and Bootstrap",
+                "cover_picture": "./assets/projects-thumb/pokedex.jpeg",
+                "link": "https://rodrigogaldino553.github.io/Pokedex/"
+              },
+              {
+                "name": "Railsmails",
+                "description": "It's no a comercial app, it was developed just for learnments proporses, and while its development I learn put my hands on code, and pratice my frontend skills with tailwindcss, and in the backend, I learn to auto send emails form my application.",
+                "cover_picture": "./assets/projects-thumb/railsmails.png",
+                "link": "https://railsmails.com"
+              },
+              {
+                "name": "Ruby Corsego",
+                "description": "Project developed inside a <a href='https://www.udemy.com/course/ruby-on-rails-6-learn-20-gems-build-an-e-learning-platform/'>course</a>, during this course I learn a lot of features and things from rails in 200 online classes that I watch and pratice on my own following all teacher's instructions",
+                "cover_picture": "./assets/projects-thumb/ruby-corsego.png",
+                "link": "https://ruby-corsego.herokuapp.com"
+              }
+          ]
+}
