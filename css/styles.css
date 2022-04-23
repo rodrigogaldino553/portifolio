@@ -201,7 +201,7 @@ header .head .contact:hover {
   display: flex;
   max-width: 840px;
   width: 98% !important;
-  padding: 30px 5px;
+  padding: 30px 15px;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
