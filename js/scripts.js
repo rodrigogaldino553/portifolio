@@ -12,7 +12,7 @@ works = [
     "name": "Railsmails",
     "description": "It's no a comercial app, it was developed just for learnments proporses, and while its development I learn put my hands on code, and pratice my frontend skills with tailwindcss, and in the backend, I learn to auto send emails form my application.",
     "cover_picture": "./assets/projects-thumb/railsmails.png",
-    "link": "https://railsmails.com"
+    "link": "https://railsmails.herokuapp.com"
   },
   {
     "name": "Ruby Corsego",
@@ -83,8 +83,12 @@ slider.addEventListener('mouseout', ()=>{
   sliderWorks = document.querySelector('#slider')
 })
 
+<<<<<<< HEAD
+/*function walk(){
+=======
 
 function scroll(){
+>>>>>>> ceaac7134b030ca334c4f5359abbfb315a02431e
   if(sliderWorks === "") return false
 
   scroller += scrollNext
@@ -95,6 +99,11 @@ function scroll(){
 
 }
 
+<<<<<<< HEAD
+function automate(){
+  setInterval(walk, 3000)
+}*/
+=======
 function auto_scroll(){
   setInterval(scroll, 3000)
 }*/
@@ -104,6 +113,7 @@ function init(){
   show_works()
   // auto_scroll()
 }
+>>>>>>> ceaac7134b030ca334c4f5359abbfb315a02431e
 
 init()
 

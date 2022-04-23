@@ -212,7 +212,7 @@ header .head .contact:hover {
 }
 
 #works ::-webkit-scrollbar-track{
-  background-color: rgba(255, 255, 255, 0.041);
+  background-color: #28df991e;
   border-radius: 8px;
 }
 
