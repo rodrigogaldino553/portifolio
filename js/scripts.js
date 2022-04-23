@@ -30,7 +30,7 @@ const card_template = (work) => {
         <h5 class="card-title">${work.name}</h5>
         <p class="card-text">${work.description}</p>
         <div class="check-btn">
-          <a href="${work.link}" target="_blank" class="btn btn-outline-light">Check it out here</a>
+          <a href="${work.link}" target="_blank" class="btn btn-outline-light">Check it out</a>
         </div>
       </div>
     </div>
