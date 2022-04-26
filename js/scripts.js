@@ -83,27 +83,7 @@ slider.addEventListener('mouseout', ()=>{
   sliderWorks = document.querySelector('#slider')
 })
 
-<<<<<<< HEAD
-/*function walk(){
-=======
 
-function scroll(){
->>>>>>> ceaac7134b030ca334c4f5359abbfb315a02431e
-  if(sliderWorks === "") return false
-
-  scroller += scrollNext
-  if(scroller > 840){
-    scroller = 0
-  }
-  sliderWorks.scrollTo(scroller, 0)
-
-}
-
-<<<<<<< HEAD
-function automate(){
-  setInterval(walk, 3000)
-}*/
-=======
 function auto_scroll(){
   setInterval(scroll, 3000)
 }*/
@@ -113,7 +93,7 @@ function init(){
   show_works()
   // auto_scroll()
 }
->>>>>>> ceaac7134b030ca334c4f5359abbfb315a02431e
+
 
 init()
 
