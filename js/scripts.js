@@ -3,6 +3,12 @@
 
 works = [
   {
+    "name": 'Network',
+    "description": 'I built this project a year after I decided to learn rails, it was a great opportunity to build something entirely on my own, and I could see how much I learned in this one year of studying rails, putting all the knowledge I acquired in a project into practice.<br>',
+    "cover_picture": './assets/projects-thumb/network-thumb.png',
+    "link": 'https://social-networkr.herokuapp.com'
+  },
+  {
     "name": "Pokedex",
     "description": "Was a challange for me because it was the first project using bootstrap. I had use APIs to get pokemons infos and pictures.<br>Technologies: HTML, CSS, Javascript and Bootstrap",
     "cover_picture": "./assets/projects-thumb/pokedex.jpeg",
@@ -18,7 +24,7 @@ works = [
     "name": "Ruby Corsego",
     "description": "Project developed inside a <a href='https://www.udemy.com/course/ruby-on-rails-6-learn-20-gems-build-an-e-learning-platform/'>Ruby on rails full course</a>, during this course I learn a lot of features and things from rails in 200 online classes that I watch and pratice on my own following all teacher's instructions",
     "cover_picture": "./assets/projects-thumb/ruby-corsego.png",
-    "link": "https://ruby-corsego.herokuapp.com"
+    "link": "https://corsego.xyz"
   }
 ]
 
