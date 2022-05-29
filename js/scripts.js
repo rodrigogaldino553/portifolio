@@ -24,7 +24,7 @@ works = [
     "name": "Ruby Corsego",
     "description": "Project developed inside a <a href='https://www.udemy.com/course/ruby-on-rails-6-learn-20-gems-build-an-e-learning-platform/'>Ruby on rails full course</a>, during this course I learn a lot of features and things from rails in 200 online classes that I watch and pratice on my own following all teacher's instructions",
     "cover_picture": "./assets/projects-thumb/ruby-corsego.png",
-    "link": "https://corsego.xyz"
+    "link": "corsego.xyz"
   }
 ]
 
