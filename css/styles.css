@@ -274,6 +274,11 @@ header .head .contact:hover {
   justify-content: end;
 }
 
+footer{
+  color: white;
+  background: linear-gradient(22deg, #120078b8 0%, rgb(9, 9, 121) 35%, #120078b8 100%);
+}
+
 .hide {
   display: none;
 }
