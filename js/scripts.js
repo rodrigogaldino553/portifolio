@@ -6,7 +6,7 @@ works = [
     "name": 'Network',
     "description": 'I built this project a year after I decided to learn rails, it was a great opportunity to build something entirely on my own, and I could see how much I learned in this one year of studying rails, putting all the knowledge I acquired in a project into practice.<br>',
     "cover_picture": './assets/projects-thumb/network-thumb.png',
-    "link": 'https://networkr.galdinodev.com'
+    "link": 'https://network.galdinodev.com'
   },
   {
     "name": "Pokedex",
