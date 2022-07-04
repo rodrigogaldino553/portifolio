@@ -6,7 +6,7 @@ works = [
     "name": 'Network',
     "description": 'I built this project a year after I decided to learn rails, it was a great opportunity to build something entirely on my own, and I could see how much I learned in this one year of studying rails, putting all the knowledge I acquired in a project into practice.<br>',
     "cover_picture": './assets/projects-thumb/network-thumb.png',
-    "link": 'https://social-networkr.herokuapp.com'
+    "link": 'https://networkr.galdinodev.com'
   },
   {
     "name": "Pokedex",
@@ -18,7 +18,7 @@ works = [
     "name": "Railsmails",
     "description": "It's no a comercial app, it was developed just for learnments proporses, and while its development I learn put my hands on code, and pratice my frontend skills with tailwindcss, and in the backend, I learn to auto send emails form my application.",
     "cover_picture": "./assets/projects-thumb/railsmails.png",
-    "link": "https://railsmails.herokuapp.com"
+    "link": "https://blog.galdinodev.com"
   },
   {
     "name": "Ruby Corsego",
