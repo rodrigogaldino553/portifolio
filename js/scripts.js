@@ -6,7 +6,7 @@ works = [
     "name": 'Network',
     "description": 'I built this project a year after I decided to learn rails, it was a great opportunity to build something entirely on my own, and I could see how much I learned in this one year of studying rails, putting all the knowledge I acquired in a project into practice.<br>',
     "cover_picture": './assets/projects-thumb/network-thumb.png',
-    "link": 'http://network.galdinodev.com'
+    "link": 'https://github.com/rodrigogaldino553/social-network'
   },
   {
     "name": "Pokedex",
@@ -18,13 +18,13 @@ works = [
     "name": "Railsmails",
     "description": "It's no a comercial app, it was developed just for learnments proporses, and while its development I learn put my hands on code, and pratice my frontend skills with tailwindcss, and in the backend, I learn to auto send emails form my application.",
     "cover_picture": "./assets/projects-thumb/railsmails.png",
-    "link": "http://blog.galdinodev.com"
+    "link": "https://github.com/rodrigogaldino553/blogMVP"
   },
   {
     "name": "Ruby Corsego",
     "description": "Project developed inside a <a href='https://www.udemy.com/course/ruby-on-rails-6-learn-20-gems-build-an-e-learning-platform/'>Ruby on rails full course</a>, during this course I learn a lot of features and things from rails in 200 online classes that I watch and pratice on my own following all teacher's instructions",
     "cover_picture": "./assets/projects-thumb/ruby-corsego.png",
-    "link": "http://www.corsego.xyz"
+    "link": "https://github.com/rodrigogaldino553/ruby-gems-bootcamp"
   }
 ]
 
