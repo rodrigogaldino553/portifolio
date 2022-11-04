@@ -28,6 +28,7 @@ body {
 
 header {
   background: linear-gradient(15deg, var(--primary-color) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+  background-attachment: fixed;
   height: 600px;
   padding: 20px 20px 20px 100px;
 }
