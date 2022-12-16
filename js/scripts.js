@@ -3,6 +3,12 @@
 
 works = [
   {
+    "name": 'Qrcode gen',
+    "description": 'Enter a link and it will generate you a qrcode that you can print or download. <br> Project build with rails tailwindcss and some ruby gems to generate qrcodes and manipulate images.',
+    "cover_picture": './assets/projects-thumb/qrcodegen-preview.jpeg',
+    "link": 'https://github.com/rodrigogaldino553/qrcode-gen'
+  },
+  {
     "name": 'Network',
     "description": 'I built this project a year after I decided to learn rails, it was a great opportunity to build something entirely on my own, and I could see how much I learned in this one year of studying rails, putting all the knowledge I acquired in a project into practice.<br>',
     "cover_picture": './assets/projects-thumb/network-thumb.png',
