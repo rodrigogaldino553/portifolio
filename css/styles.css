@@ -61,10 +61,15 @@ header .head img {
   top: -65%;
 }
 
+header a{
+  font-weight: 600;
+}
+
 header .head .contact {
   background: var(--secondary-color);
   color: white;
   margin-right: 8px;
+  font-weight: 600;
 }
 
 header .head .contact:hover {
@@ -75,10 +80,11 @@ header .head .contact:hover {
 
 .a-btn {
   text-decoration: none;
+  font-weight: 600;
 }
 
 .nav-a:hover{
-  color: #0a58ca !important;
+  color: var(--secondary-color) !important;
 }
 
 #about-me {
@@ -94,7 +100,7 @@ header .head .contact:hover {
 }
 
 #about-me a {
-  color: rgb(161, 161, 161);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
